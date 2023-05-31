@@ -32,10 +32,10 @@ body {
 
 @keyframes animate-grad {
         0% {
-            background-color: #673ab7
+            background-color: #106e73
         }
         50% {
-            background-color: #3f51b5;
+            background-color: #106e73;
         }
         100% {
             background-color: #00bcd4;
@@ -57,7 +57,7 @@ body {
 }
 
 .container__navbar a {
-    color: #03a9f4;
+    color: #106e73;
     text-decoration: none;
 }
 
@@ -98,7 +98,7 @@ body {
 }
 
 .loginCard__checkbox input:checked {
-    background-color: #03A9F4;
+    background-color: #106e73;
 }
 
 .container__loginCard h3 {
@@ -129,7 +129,7 @@ body {
     margin-left: 40px;
     text-align: left;
     font-size: 14px;
-    color: #03A9F4;
+    color: #106e73;
 }
 
 .container__loginCard a:hover {
@@ -149,7 +149,7 @@ body {
     text-transform: uppercase;
     border: none;
     border-radius: 2px;
-    background-color: #03A9F4;
+    background-color: #106e73;
     cursor: pointer;
     color: white;
     font-weight: bold;
@@ -157,7 +157,7 @@ body {
 }
 
 .loginCard__loginBtn:hover {
-    background-color: #038FCE;
+    background-color: #106e73;
 }
 
 /* .loginCard__loginBtn:disabled {
@@ -229,7 +229,7 @@ body {
 }
 
 .container__privacy span {
-    color: #03a9f4;
+    color: #106e73;
     cursor: pointer;
 }
 
@@ -281,10 +281,10 @@ body {
     }
     @keyframes animate-grad {
         0% {
-            background-color: #673ab7
+            background-color: #106e73
         }
         50% {
-            background-color: #3f51b5;
+            background-color: #106e73;
         }
         100% {
             background-color: #00bcd4;

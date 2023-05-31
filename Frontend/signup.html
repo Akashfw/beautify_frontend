@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- /////// -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
   
 </head>
 
@@ -135,12 +135,12 @@
   let flag=true;
   let status=null
   if(email=="admin@gmail.com" && password =="admin"){
-    window.location.href ="../Frontend/adminpage/html/index.html"
+    window.location.href ="../Frontend/adminpage/html/admin.html"
   }else{
 
   
         let register_request = await fetch(
-          "http://localhost:8000/user/otp",
+          "https://beautify-backend.onrender.com/user/otp",
           {
             method: "POST",
             headers: {

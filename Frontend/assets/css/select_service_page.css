@@ -7,7 +7,7 @@ body {
 #nav {
   top: 0;
   height: 140px;
-  background-color: rgb(16, 25, 40);
+  background-color: #106e73;
   position: sticky;
 }
 #step {
@@ -48,7 +48,7 @@ body {
 }
 #book button {
   padding: 15px 30px;
-  background-color: rgb(16, 25, 40);
+  background-color: #106e73;
   cursor: pointer;
   color: white;
   font-weight: 700;
@@ -57,7 +57,7 @@ body {
   border-radius: 7px;
 }
 #book button:hover {
-  background-color: rgb(21, 28, 42);
+  background-color: #106e73;
   color: rgb(198, 198, 198);
   transition: 500ms;
 }
@@ -73,7 +73,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 input[type="checkbox"]:checked {
-  background-color: #0d47a1;
+  background-color: #106e73;
   border: none;
 }
 #main {

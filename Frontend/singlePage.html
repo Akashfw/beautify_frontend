@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="./logos/Beauty -landing logo.png" rel="icon">
+    <link href="./logos/b_icon-removebg-preview.png" rel="icon">
     <link rel="stylesheet" href="./assets/css/productPage.css">
     <link rel="stylesheet" href="./assets/css/singlePage.css">
 
@@ -210,14 +210,14 @@
     
         <div class="container footer-bottom clearfix">
           <div class="copyright">
-            &copy; Copyright <strong><span>Beautygem</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Beautify</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-            Designed by <a href="#">Beautygem Team</a>
+            Designed by <a href="#">Beautify Team</a>
           </div>
         </div>
       </footer><!-- End Footer -->
@@ -237,7 +237,7 @@
     let globalData = []
     let pro_id = sessionStorage.getItem("productId");
     console.log(pro_id);
-    let product_id=JSON.stringify(pro_id);
+    
     window.addEventListener("load", () => {
         // TECK DATA FROM LOCALSTORAGE 
         getData()
@@ -246,7 +246,7 @@
     async function getData() {
         try {
 
-            let res = await fetch(`http://localhost:8000/product/data/${product_id}`,{
+            let res = await fetch(`https://beautify-backend.onrender.com/product/data/${pro_id}`,{
           headers:{
             "Content-type": "application/json",
             "Authorization":`${localStorage.getItem("token")}`
@@ -254,18 +254,18 @@
         })
 
             let pro_data = await res.json()
-            console.log(pro_data);
-            globalData = [...pro_data]
+            // console.log(pro_data);
+            //  globalData = [...pro_data]
             render(pro_data)
             //session
-            sessionStorage.setItem("shopData", JSON.stringify(pro_data[0]))
+            sessionStorage.setItem("shopData", JSON.stringify(pro_data))
 
             //local
-            localStorage.setItem("list", JSON.stringify(pro_data[0]["services"]));
-            localStorage.setItem("shopDetails", JSON.stringify(pro_data[0]));
+            localStorage.setItem("list", JSON.stringify(pro_data.services));
+            localStorage.setItem("shopDetails", JSON.stringify(pro_data));
 
             // detaileData(pro_data)
-            serviceList(pro_data[0])
+            serviceList(pro_data)
         } catch (error) {
             alert(`Something went wrong`)
             console.log(error);
@@ -273,7 +273,8 @@
     }
 
     function render(pro_data) {
-        let data = pro_data[0]
+        let data = pro_data;
+        console.log(data);
         let userSearchProduct = JSON.parse(sessionStorage.getItem("userSearch"))
 
         document.querySelector("#serlo").innerHTML = `${userSearchProduct.service} - ${userSearchProduct.location}`

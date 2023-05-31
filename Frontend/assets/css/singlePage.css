@@ -23,7 +23,7 @@ h1 {
 }
 
 .title h1 {
-    color: #37517e;
+    color: #106e73;
 }
 
 .product {
@@ -60,16 +60,16 @@ h1 {
 .book button {
     padding: 15px 95px;
     font-size: 24px;
-    background-color: #37517e;
+    background-color: #106e73;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .book button:hover {
-    color: #37517e;
+    color: #106e73;
     background-color: white;
-    border: 2px solid #37517e;
+    border: 2px solid #106e73;
 }
 
 .about {
@@ -84,7 +84,7 @@ h1 {
 
 .about h2 {
     margin-left: 19px;
-    color: #37517e;
+    color: #106e73;
 }
 
 .about p:nth-child(2) {
@@ -125,7 +125,7 @@ h1 {
 }
 
 .service .ser-list h2 {
-    color: #37517e;
+    color: #106e73;
 }
 
 .ser-list {
@@ -144,14 +144,14 @@ h1 {
 }
 
 .ser-list p:nth-child(odd) {
-    background-color: lightblue;
+    background-color: rgb(90, 163, 160);
 }
 
 .stick {
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-    background-color: #37517e;
+    background-color: #106e73;
     color: white;
 }
 
