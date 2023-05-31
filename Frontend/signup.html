@@ -151,8 +151,8 @@
         )
           .then((res) => res.json())
           .then((res) => {
-            console.log(res)
-            if(res.status==401){
+            
+            if(res.msg=="User already present"){
               alert('You have to login');
               window.location.href="./login.html"
               flag=false
